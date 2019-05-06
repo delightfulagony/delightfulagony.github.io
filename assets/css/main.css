@@ -43,7 +43,9 @@ ul.posts li {
     list-style: none;
 }
 #profile_pic {
-	border-radius: 50%
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
 }
 .column {
 	float: left
