@@ -42,3 +42,6 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+#profile_pic {
+	border-radius: 50%
+}
