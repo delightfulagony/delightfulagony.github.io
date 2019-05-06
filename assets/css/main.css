@@ -45,3 +45,13 @@ ul.posts li {
 #profile_pic {
 	border-radius: 50%
 }
+.column {
+	float: left
+	padding: 10px;
+}
+.left {
+	width: 40%;
+}
+.right {
+	width: 60%;
+}
