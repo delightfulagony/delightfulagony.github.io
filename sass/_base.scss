@@ -1,0 +1,39 @@
+$font-stack: Iosevka Aile, serif;
+$fg-color: #1d1d1d;
+$bg-color: #efefef;
+$highlight-color: #96c5bc;
+
+* { margin:0;padding:0;box-sizing:border-box;text-decoration:none;color:$fg-color }
+body { padding:30px;font-family:serif;font-size:16px;
+	* { margin-right:auto;
+		* { margin-right:auto; }
+	}
+}
+header { float:left;margin:5px 30px 0 0;min-height:90px; }
+nav { margin:0 0 100px;
+	ul { padding:0;margin:0 45px 30px 0;float:left;
+		li { list-style-type: none; }
+	}
+}
+main { max-width:800px;clear:both;
+	p { margin:auto;line-height:120% }
+	a:hover, a:hover > * { background-color:$bg-color;color:$fg-color;text-decoration:none; }
+	a:before { content:"{" }
+	a:after { content:"}" }
+	a[target="_blank"]:before { content: "[" }
+	a[target="_blank"]:after { after: "]" }
+	h1, h2, h3, h4, h5, figure figcaption { max-width:600px;clear:both}
+	ul, ol { margin: 0 30px 30px 30px;clear:both }
+	ul ul { margin-bottom:0}
+	ul li { line-height:20px;margin-bottom:5px }
+	q { font-family:$font-stack;font-size:18px;font-style:italic;display:block;max-width:400px }
+	::selection { background-color:$highlight-color;color:$fg-color;text-decoration:none }
+	article { border-left:5px solid $bg-color;padding-left:25px;clear:both }
+	cite { display:block;clear:both; margin-bottom:30px;
+		:before { content:"— " }
+	}
+}
+footer { border-top:1.5px solid;padding:30px 0 0 0;clear:both;
+	> * { display:inline-block;margin-right:5px }
+	img { margin:0 0 -10px 0;width:30px }
+}
